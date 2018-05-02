@@ -17,12 +17,12 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return Category.getCategories().size();
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return position + "";
+        return Category.getCategories().get(position).getTitle();
     }
 }
