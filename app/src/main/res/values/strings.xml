@@ -1,6 +1,40 @@
 <resources>
     <string name="app_name">Haifa Tour Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bahai_title">The Bahá’í Gardens</string>
+    <string name="bahai_description">
+        These gardens, located in the heart of Haifa, comprise a staircase of nineteen terraces
+        extending all the way up the northern slope of Mount Carmel. The golden-domed Shrine of
+        the Báb, the resting place of the Prophet-Herald of the Bahá’í Faith, stands on the central
+        terrace, looking across the bay towards ‘Akko.
+        \nWhile different parts of the gardens offer a variety of experiences, they speak in a
+        common language of graveled paths, hedges and flower beds groomed and nurtured by dedicated
+        gardeners. The gardens frame panoramic views of the city, the Galilee Hills and the
+        Mediterranean Sea.
+    </string>
+    <string name="bahai_address">80 Hatzionut Avenue, Haifa</string>
+    <string name="bahai_source">https://www.ganbahai.org.il/en/haifa</string>
+    <string name="bahai_phone">04–831–3131</string>
+    <string name="bahai_url">www.ganbahai.org.il/en/haifa</string>
+
+    <string name="carmelite_title">Stella Maris Carmelite Monastery</string>
+    <string name="carmelite_description">
+        The present Stella Maris Carmelite Monastery was built in 1836 and is noted for its lush
+        frescoes portraying St. Elijah. The interior also contains paintings of scenes of the lives
+        of the prophets Isaiah and Ezekiel and has a cedar figurine of the Virgin known as the
+        Madonna of Mt. Carmel. The Carmelite order was founded on Mount Carmel in 1150 as a
+        hermetic Catholic sect.
+        \nWhen the order sided with Napoleon during his battle against the Ottoman Turks in 1799,
+        the Carmelite monasteries were destroyed. In front of the building is the tomb of the
+        French soldiers who were killed during the battle. Afterwards, this monastery was rebuilt
+        but was again razed in 1821 by the pasha of Akko (Acre). A small but interesting museum is
+        in a room adjoining the monastery entrance. From the monastery, a trail leads down to the
+        grotto known as Elijah\'s cave, believed to be either the one-time dwelling place or tomb
+        of Elijah.
+    </string>
+    <string name="carmelite_address">Stella Maris Rd, Haifa</string>
+    <string name="carmelite_source">https://www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm</string>
+    <string name="carmelite_phone">04–833–7758</string>
+    <string name="location">Location</string>
+
 </resources>

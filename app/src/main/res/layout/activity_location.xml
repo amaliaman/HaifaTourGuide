@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/location_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/bahai" />
+
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/location_thumbnail"
+            android:textColor="@android:color/white"
+            tools:text="@string/bahai_title" />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_thumbnail"
+            android:contentDescription="@string/location"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_thumbnail"
+            android:layout_toEndOf="@id/location_icon"
+            android:layout_toRightOf="@id/location_icon"
+            tools:text="@string/bahai_address" />
+
+        <TextView
+            android:id="@+id/location_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_address"
+            android:autoLink="phone"
+            tools:text="@string/bahai_phone" />
+
+        <TextView
+            android:id="@+id/location_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_phone"
+            android:autoLink="web"
+            tools:text="@string/bahai_url" />
+
+        <TextView
+            android:id="@+id/location_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/bahai_description"
+            android:layout_below="@id/location_url" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_source"
+            android:layout_below="@id/location_description"
+            tools:text="@string/bahai_source"
+            android:autoLink="web"/>
+
+    </RelativeLayout>
+</ScrollView>
