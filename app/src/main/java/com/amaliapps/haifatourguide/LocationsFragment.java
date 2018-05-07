@@ -47,8 +47,8 @@ public class LocationsFragment extends Fragment {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent locationIntent = new Intent(getContext(), LocationActivity.class);
-                    locationIntent.putExtra(Constants.INTENT_EXTRA_ID, finalLocations.get(position).getId());
+                    Intent locationIntent = new Intent(getContext(), LocationDetailsActivity.class);
+                    locationIntent.putExtra(Constants.INTENT_EXTRA_ID, finalLocations.get(position).getIndex());
                     startActivity(locationIntent);
                 }
             });

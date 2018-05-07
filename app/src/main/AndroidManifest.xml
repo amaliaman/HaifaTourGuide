@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LocationActivity"
+            android:name=".LocationDetailsActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

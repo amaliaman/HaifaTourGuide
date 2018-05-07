@@ -6,16 +6,16 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LocationActivity extends AppCompatActivity {
+public class LocationDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
+        setContentView(R.layout.activity_location_details);
 
         // Get location id from intent
         int locationId = getIntent().getIntExtra(Constants.INTENT_EXTRA_ID, 0);
-        final Location location = Location.getLocatinById(locationId);
+        final Location location = Location.getLocationByIndex(locationId);
 
         setTitle(location.getTitle());
 
@@ -48,7 +48,7 @@ public class LocationActivity extends AppCompatActivity {
 
         // Set the current location's source
         TextView sourceTextView = findViewById(R.id.location_source);
-        sourceTextView.setText(location.getSource());
+        sourceTextView.setText(String.format("%s%s", getString(R.string.source), location.getSource()));
     }
 }
 

@@ -36,5 +36,6 @@
     <string name="carmelite_source">https://www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm</string>
     <string name="carmelite_phone">04–833–7758</string>
     <string name="location">Location</string>
+    <string name="source">Source:</string>
 
 </resources>

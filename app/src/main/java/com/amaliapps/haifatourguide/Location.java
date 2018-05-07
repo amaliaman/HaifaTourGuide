@@ -13,7 +13,6 @@ public class Location implements Comparable<Location> {
     private String mSource;
     private String mPhone;
     private String mUrl;
-    private int mId;
 
     private static ArrayList<Location> mLocations = new ArrayList<>();
 
@@ -76,7 +75,7 @@ public class Location implements Comparable<Location> {
         return mUrl;
     }
 
-    public int getId() {
+    public int getIndex() {
         return mLocations.indexOf(this);
     }
 
@@ -84,8 +83,8 @@ public class Location implements Comparable<Location> {
         return mLocations;
     }
 
-    public static Location getLocatinById(int id) {
-        return mLocations.get(id);
+    public static Location getLocationByIndex(int index) {
+        return mLocations.get(index);
     }
 
     @Override
