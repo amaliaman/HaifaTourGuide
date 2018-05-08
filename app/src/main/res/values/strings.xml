@@ -13,8 +13,8 @@
         Mediterranean Sea.
     </string>
     <string name="bahai_address">80 Hatzionut Avenue, Haifa</string>
-    <string name="bahai_source">https://www.ganbahai.org.il/en/haifa</string>
-    <string name="bahai_phone">04–831–3131</string>
+    <string name="bahai_source">www.ganbahai.org.il/en/haifa</string>
+    <string name="bahai_phone">04–8313131</string>
     <string name="bahai_url">www.ganbahai.org.il/en/haifa</string>
 
     <string name="carmelite_title">Stella Maris Carmelite Monastery</string>
@@ -33,9 +33,29 @@
         of Elijah.
     </string>
     <string name="carmelite_address">Stella Maris Rd, Haifa</string>
-    <string name="carmelite_source">https://www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm</string>
-    <string name="carmelite_phone">04–833–7758</string>
+    <string name="carmelite_source">www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm</string>
+    <string name="carmelite_phone">04–8337758</string>
+
+    <string name="tikotin_title">Tikotin Museum of Japanese Art</string>
+    <string name="tikotin_address">89 HaNassi Blvd., Haifa</string>
+    <string name="tikotin_source">www.tmja.org.il/eng</string>
+    <string name="tikotin_phone">04–8383554</string>
+    <string name="tikotin_url">www.tmja.org.il/eng</string>
+    <string name="tikotin_description">The Tikoting Museum of Japanese Art showcases an extensive
+        variety of approximately 7,000 contemporary and traditional Japanese art, including paintings
+        and prints, antique decorated books, room dividers, antique swards, and various art objects.
+        The museum, which is nestled on the crest of Mount Carmel, is completely dedicated to Japanese
+        culture and the collection, preservation, and exhibition of Japanese art, and is the only one of
+        its kind in the Middle East.</string>
+
     <string name="location">Location</string>
     <string name="source">Source:</string>
+    <string name="geo_intent">geo:0,0?q=</string>
+    <string name="vivino_title">Vivino</string>
+    <string name="vivino_description">Italian</string>
+    <string name="vivino_address">1 Elizabeth Square, Haifa</string>
+    <string name="vivino_source">en.vivino.co.il</string>
+    <string name="vivino_phone">04–8229454</string>
+    <string name="vivino_url">en.vivino.co.il</string>
 
 </resources>

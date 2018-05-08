@@ -50,21 +50,11 @@ public class LocationArrayAdapter extends ArrayAdapter<Location> {
             locationIcon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent geoIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q="
-                            + currentLocation.getAddress()));
+                    Intent geoIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("%s%s",
+                            getContext().getString(R.string.geo_intent), currentLocation.getAddress())));
                     getContext().startActivity(geoIntent);
                 }
             });
-//            // Set the current location's phone
-//            TextView phoneTextView = listItemView.findViewById(R.id.location_phone);
-//            phoneTextView.setText(currentLocation.getPhone());
-//
-//            // Set the current location's url
-//            TextView urlTextView = listItemView.findViewById(R.id.location_url);
-//            if (currentLocation.getUrl() != null) {
-//                urlTextView.setText(currentLocation.getUrl());
-//                urlTextView.setVisibility(View.VISIBLE);
-//            }
         }
 
         return listItemView;
