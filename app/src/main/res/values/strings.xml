@@ -2,6 +2,10 @@
     <string name="app_name">Haifa Tour Guide</string>
 
     <string name="bahai_title">The Bahá’í Gardens</string>
+    <string name="bahai_address">80 Hatzionut Avenue, Haifa</string>
+    <string name="bahai_source">www.ganbahai.org.il/en/haifa</string>
+    <string name="bahai_phone">04–8313131</string>
+    <string name="bahai_url">www.ganbahai.org.il/en/haifa</string>
     <string name="bahai_description">
         These gardens, located in the heart of Haifa, comprise a staircase of nineteen terraces
         extending all the way up the northern slope of Mount Carmel. The golden-domed Shrine of
@@ -12,12 +16,11 @@
         gardeners. The gardens frame panoramic views of the city, the Galilee Hills and the
         Mediterranean Sea.
     </string>
-    <string name="bahai_address">80 Hatzionut Avenue, Haifa</string>
-    <string name="bahai_source">www.ganbahai.org.il/en/haifa</string>
-    <string name="bahai_phone">04–8313131</string>
-    <string name="bahai_url">www.ganbahai.org.il/en/haifa</string>
 
     <string name="carmelite_title">Stella Maris Carmelite Monastery</string>
+    <string name="carmelite_address">Stella Maris Rd, Haifa</string>
+    <string name="carmelite_source">www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm</string>
+    <string name="carmelite_phone">04–8337758</string>
     <string name="carmelite_description">
         The present Stella Maris Carmelite Monastery was built in 1836 and is noted for its lush
         frescoes portraying St. Elijah. The interior also contains paintings of scenes of the lives
@@ -32,9 +35,6 @@
         grotto known as Elijah\'s cave, believed to be either the one-time dwelling place or tomb
         of Elijah.
     </string>
-    <string name="carmelite_address">Stella Maris Rd, Haifa</string>
-    <string name="carmelite_source">www.planetware.com/tourist-attractions-/haifa-isr-ha-h.htm</string>
-    <string name="carmelite_phone">04–8337758</string>
 
     <string name="tikotin_title">Tikotin Museum of Japanese Art</string>
     <string name="tikotin_address">89 HaNassi Blvd., Haifa</string>
@@ -48,9 +48,87 @@
         culture and the collection, preservation, and exhibition of Japanese art, and is the only one of
         its kind in the Middle East.</string>
 
+    <string name="art_title">Haifa Museum of Art</string>
+    <string name="art_address">26 Shabtai Levi Street, Haifa</string>
+    <string name="art_source">www.hma.org.il/eng</string>
+    <string name="art_phone">04–9115997</string>
+    <string name="art_url">www.hma.org.il/eng</string>
+    <string name="art_description">Haifa Museum of Art is nestled within a stone building for preservation.
+        The museum showcases the works of Israeli and international artists and unfolds on the one hand
+        the story of Israeli culture from the beginning of the 20th century, and on the other, the place
+        of contemporary art in the age of globalization. Haifa Museum of Art, one of the three largest
+        museums of art in Israel, sprawls over approximately 3,500 Sqm and resides in three floors. The
+        museum is an institution and an attraction for artists and art theorists who explore the topics
+        of the history of Israeli and international art, with emphasis on contemporary art, which relate
+        to essence, meaning, and the potential embodied in the museum’s collection.</string>
+
+    <string name="maritime_title">The National Maritime Museum</string>
+    <string name="maritime_address">198 Allenby Road, Haifa</string>
+    <string name="maritime_source">www.nmm.org.il/eng</string>
+    <string name="maritime_phone">04–8536622</string>
+    <string name="maritime_url">www.nmm.org.il/eng</string>
+    <string name="maritime_description">The National Maritime Museum in Haifa showcases the history of
+        shipping in the Mediterranean Basin and the maritime story of the city of Haifa. The museum displays
+        over 5000 years of history and maritime archeology, and makes it possible for its visitors to
+        encounter and learn about ancient ships, anchors, battling rams, and other archeological findings,
+        such as gold coins treasures that were found in marine excavations.
+        \nThe museum also displays the pirate
+        exhibition and the Hebrew-shipping endeavor.</string>
+
+    <string name="city_title">Haifa City Museum</string>
+    <string name="city_address">11 Ben Gurion Ave., Haifa</string>
+    <string name="city_source">www.hcm.org.il/eng</string>
+    <string name="city_phone">04–9115888</string>
+    <string name="city_url">www.hcm.org.il/eng</string>
+    <string name="city_description">
+        The museum’s location on the edge of Haifa’s German Colony, next to
+        the historical city, exposes a rich and complex urban texture, which attempts to express the
+        historical diversity of the city’s different populations. As part of the museum’s cultural activities,
+        it exhibits themes related to the core of the city and its character, which attract different cultures,
+        and encounters between the east and the west. The museum thus opens a space for debating political
+        issues that are formed and processed within the urban space.
+        \nThe museum not only explores the unique story of Haifa within the local landscape, but also
+        promotes a discourse revolving around the urban space and the urban culture as an object of research.
+    </string>
+
+    <string name="mane_title">Mané-Katz Museum</string>
+    <string name="mane_address">89 Yefe Nof Street, Haifa</string>
+    <string name="mane_source">www.mkm.org.il/eng</string>
+    <string name="mane_phone">04–9119372</string>
+    <string name="mane_url">www.mkm.org.il/eng</string>
+    <string name="mane_description">
+        The Mané-Katz Museum resides at Panorama Road, and overlooks the stunning landscape of the bay
+        of Haifa. The museum opened in 1977, at the home of Mané-Katz, where the artist lived and created
+        during the last years of his life. In 1958, Mané-Katz bequeathed his entire estate and collections
+        to the municipality of Haifa. In August 2010, Mané-Katz Museum, which until then operated as part
+        of the municipality of Haifa, was transferred to the management of Haifa Museums under the management
+        of Ms. Noa Tarshis. In November, the Municipality of Haifa allocated the museum a budget to restore
+        the building. The museum opened its doors again to the public on April 9th 2011. The building’s overall
+        renovations included renovating the showrooms and the foundations, adding new offices and a museum shop,
+        and establishing a café on the balcony overlooking the magical scenery of Haifa’s bay. When the renovations
+        were completed, elegant exhibitions spaces, which made it possible to properly exhibit Mané-Katz works and
+        collections, were fashioned.
+    </string>
+
+    <string name="struck_title">Hermann Struck Museum</string>
+    <string name="struck_address">23 Arlozorov Street, Haifa</string>
+    <string name="struck_source">www.shm.org.il/eng</string>
+    <string name="struck_phone">04–9127090</string>
+    <string name="struck_url">www.shm.org.il/eng</string>
+    <string name="struck_description">
+        The Hermann Struck Museum, which was built and founded at his home in Haifa, offers us a glimpse
+        into the colorful life and rich work of one of the most prominent  20th century international
+        artists in the field of printmaking. Alongside the contemporary and changing exhibitions in the
+        field of the art of printmaking, which explore the medium of printmaking as one of the main tropes
+        in Struck’s oeuvre, the museum also showcases furniture, rugs, personal artifacts, books as well
+        as oil paintings painted by Hermann Struck, in order to provide its visitors with the sense of
+        walking into the artist’s home with his presence.
+    </string>
+
     <string name="location">Location</string>
     <string name="source">Source:</string>
     <string name="geo_intent">geo:0,0?q=</string>
+
     <string name="vivino_title">Vivino</string>
     <string name="vivino_description">Italian</string>
     <string name="vivino_address">1 Elizabeth Square, Haifa</string>
