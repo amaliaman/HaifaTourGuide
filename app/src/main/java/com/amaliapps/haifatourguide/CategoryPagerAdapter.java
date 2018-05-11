@@ -14,6 +14,7 @@ public class CategoryPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        // Pass the selected category to the location fragment
         Bundle bundle = new Bundle();
         bundle.putInt(Constants.BUNDLE_CATEGORY_ID, Category.getCategories().get(position).getId());
         LocationsFragment locationsFragment = new LocationsFragment();

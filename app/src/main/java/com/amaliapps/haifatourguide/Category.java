@@ -19,14 +19,25 @@ public class Category {
         return mTitle;
     }
 
-    public static ArrayList<Category> getCategories() {
-        return mCategories;
-    }
-
     public int getId() {
         return mId;
     }
 
+    /**
+     * Get all created categories
+     *
+     * @return a list of all created categories
+     */
+    public static ArrayList<Category> getCategories() {
+        return mCategories;
+    }
+
+    /**
+     * Get locations for a given Category
+     *
+     * @param categoryId the requested category
+     * @return a list of locations for a given Category
+     */
     public static ArrayList<Location> getLocationsByCategory(int categoryId) {
         ArrayList<Location> locations = new ArrayList<>();
         for (Location location : Location.getLocations()) {

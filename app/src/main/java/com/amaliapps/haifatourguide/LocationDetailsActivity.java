@@ -10,7 +10,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class LocationDetailsActivity extends AppCompatActivity {
+    TextView titleTextView;
+    TextView titleNoImageTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +31,20 @@ public class LocationDetailsActivity extends AppCompatActivity {
 
         // Set the current location's thumbnail
         ImageView thumb = findViewById(R.id.location_thumbnail);
-        thumb.setImageResource(location.getImageId());
+        if (location.getImageId() > 0) {
+            thumb.setImageResource(location.getImageId());
+            thumb.setVisibility(View.VISIBLE);
+            // Set the current location's title
+            titleTextView = findViewById(R.id.location_title);
+            titleTextView.setText(location.getTitle());
+            titleTextView.setVisibility(View.VISIBLE);
+        } else {
+            // Set the current location's title
+            titleNoImageTextView = findViewById(R.id.location_no_image_title);
+            titleNoImageTextView.setText(location.getTitle());
+            titleNoImageTextView.setVisibility(View.VISIBLE);
+        }
 
-        // Set the current location's title
-        TextView titleTextView = findViewById(R.id.location_title);
-        titleTextView.setText(location.getTitle());
 
         // Set the current location's address + link to map
         TextView addressTextView = findViewById(R.id.location_address);
@@ -46,13 +61,24 @@ public class LocationDetailsActivity extends AppCompatActivity {
 
         // Set the current location's phone
         TextView phoneTextView = findViewById(R.id.location_phone);
-        phoneTextView.setText(location.getPhone());
+        if (location.getPhone() != null) {
+            phoneTextView.setText(location.getPhone());
+            phoneTextView.setVisibility(View.VISIBLE);
+        }
 
         // Set the current location's url
         TextView urlTextView = findViewById(R.id.location_url);
         if (location.getUrl() != null) {
             urlTextView.setText(location.getUrl());
             urlTextView.setVisibility(View.VISIBLE);
+        }
+
+        // Set the current location's dates (for events)
+        TextView eventTextView = findViewById(R.id.location_dates);
+        if (location.getStartDate() != null) {
+            eventTextView.setText(String.format("%s - %s", getStringFromDate(location.getStartDate()),
+                    getStringFromDate(location.getEndDate())));
+            eventTextView.setVisibility(View.VISIBLE);
         }
 
         // Set the current location's description
@@ -62,6 +88,11 @@ public class LocationDetailsActivity extends AppCompatActivity {
         // Set the current location's source
         TextView sourceTextView = findViewById(R.id.location_source);
         sourceTextView.setText(String.format("%s %s", getString(R.string.source), location.getSource()));
+    }
+
+    private String getStringFromDate(Date startDate) {
+        DateFormat dateFormatter = DateFormat.getDateInstance(DateFormat.DEFAULT, Locale.getDefault());
+        return dateFormatter.format(startDate);
     }
 }
 

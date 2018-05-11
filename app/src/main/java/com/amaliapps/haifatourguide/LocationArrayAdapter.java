@@ -35,19 +35,19 @@ public class LocationArrayAdapter extends ArrayAdapter<Location> {
         if (currentLocation != null) {
             // Set the current location's thumbnail
             ImageView thumb = listItemView.findViewById(R.id.location_thumbnail);
-            thumb.setImageResource(currentLocation.getImageId());
+            if (currentLocation.getImageId() > 0) {
+                thumb.setImageResource(currentLocation.getImageId());
+                thumb.setVisibility(View.VISIBLE);
+            }
 
             // Set the current location's title
             TextView titleTextView = listItemView.findViewById(R.id.location_title);
             titleTextView.setText(currentLocation.getTitle());
 
-            // Set the current location's address
+            // Set the current location's address + link to geo activity
             TextView addressTextView = listItemView.findViewById(R.id.location_address);
             addressTextView.setText(currentLocation.getAddress());
-
-            // Link the icon to geo intent to open maps/GPS
-            ImageView locationIcon = listItemView.findViewById(R.id.location_icon);
-            locationIcon.setOnClickListener(new View.OnClickListener() {
+            addressTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent geoIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("%s%s",

@@ -5,6 +5,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import java.text.ParseException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Fill the app with categories and locations
         if (!Initializer.isInitialized) {
-            Initializer.initializeData(this);
+            try {
+                Initializer.initializeData(this);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
         }
 
         // Find the view pager that will allow the user to swipe between fragments

@@ -3,6 +3,7 @@ package com.amaliapps.haifatourguide;
 import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Location implements Comparable<Location> {
     private String mTitle;
@@ -13,9 +14,12 @@ public class Location implements Comparable<Location> {
     private String mSource;
     private String mPhone;
     private String mUrl;
+    private Date mStartDate;
+    private Date mEndDate;
 
     private static ArrayList<Location> mLocations = new ArrayList<>();
 
+    // Constructor without dates (non-events)
     Location(int categoryId, String title, int imageId, String description, String address,
              String source, String phone, String url) {
         this.mTitle = title;
@@ -30,8 +34,9 @@ public class Location implements Comparable<Location> {
         mLocations.add(this);
     }
 
+    // Constructor with dates (events)
     Location(int categoryId, String title, int imageId, String description, String address,
-             String source, String phone) {
+             String source, String phone, String url, Date startDate, Date endDate) {
         this.mTitle = title;
         this.mImageId = imageId;
         this.mDescription = description;
@@ -39,6 +44,9 @@ public class Location implements Comparable<Location> {
         this.mAddress = address;
         this.mSource = source;
         this.mPhone = phone;
+        this.mUrl = url;
+        this.mStartDate = startDate;
+        this.mEndDate = endDate;
 
         mLocations.add(this);
     }
@@ -75,6 +83,14 @@ public class Location implements Comparable<Location> {
         return mUrl;
     }
 
+    public Date getStartDate() {
+        return mStartDate;
+    }
+
+    public Date getEndDate() {
+        return mEndDate;
+    }
+
     public int getIndex() {
         return mLocations.indexOf(this);
     }
@@ -83,6 +99,11 @@ public class Location implements Comparable<Location> {
         return mLocations;
     }
 
+    /**
+     * Get a location by its index
+     * @param index index in the list
+     * @return the location
+     */
     public static Location getLocationByIndex(int index) {
         return mLocations.get(index);
     }

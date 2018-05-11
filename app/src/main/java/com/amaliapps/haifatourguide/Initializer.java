@@ -2,6 +2,11 @@ package com.amaliapps.haifatourguide;
 
 import android.content.Context;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class Initializer {
 
     private static final int MUSEUMS_CATEGORY_ID = 1;
@@ -11,12 +16,12 @@ public class Initializer {
 
     public static boolean isInitialized = false;
 
-    public static void initializeData(Context context) {
+    public static void initializeData(Context context) throws ParseException {
         // Create categories
-        Category cat1 = new Category("Landmarks", LANDMARKS_CATEGORY_ID);
-        Category cat2 = new Category("Restaurants", RESTAURANTS_CATEGORY_ID);
-        Category cat3 = new Category("Museums", MUSEUMS_CATEGORY_ID);
-        Category cat4 = new Category("Events", EVENTS_CATEGORY_ID);
+        Category cat1 = new Category(context.getString(R.string.landmarks_label), LANDMARKS_CATEGORY_ID);
+        Category cat2 = new Category(context.getString(R.string.restaurants_label), RESTAURANTS_CATEGORY_ID);
+        Category cat3 = new Category(context.getString(R.string.museums_label), MUSEUMS_CATEGORY_ID);
+        Category cat4 = new Category(context.getString(R.string.events_label), EVENTS_CATEGORY_ID);
 
         // Create locations
         Location loc1 = new Location(LANDMARKS_CATEGORY_ID, context.getString(R.string.bahai_title),
@@ -27,7 +32,7 @@ public class Initializer {
         Location loc2 = new Location(LANDMARKS_CATEGORY_ID, context.getString(R.string.carmelite_title),
                 R.drawable.carmelite, context.getString(R.string.carmelite_description),
                 context.getString(R.string.carmelite_address), context.getString(R.string.carmelite_source),
-                context.getString(R.string.carmelite_phone));
+                context.getString(R.string.carmelite_phone), null);
 
         Location loc3 = new Location(MUSEUMS_CATEGORY_ID, context.getString(R.string.tikotin_title),
                 R.drawable.tikotin, context.getString(R.string.tikotin_description),
@@ -64,6 +69,46 @@ public class Initializer {
                 context.getString(R.string.struck_source), context.getString(R.string.struck_phone),
                 context.getString(R.string.struck_url));
 
+        Location loc10 = new Location(RESTAURANTS_CATEGORY_ID, context.getString(R.string.hanamal_title), R.drawable.hanamal,
+                context.getString(R.string.hanamal_description), context.getString(R.string.hanamal_address),
+                context.getString(R.string.hanamal_source), context.getString(R.string.hanamal_phone),
+                context.getString(R.string.hanamal_url));
+
+        Location loc11 = new Location(RESTAURANTS_CATEGORY_ID, context.getString(R.string.libira_title), R.drawable.libira,
+                context.getString(R.string.libira_description), context.getString(R.string.libira_address),
+                context.getString(R.string.libira_source), context.getString(R.string.libira_phone),
+                context.getString(R.string.libira_url));
+
+        Location loc12 = new Location(RESTAURANTS_CATEGORY_ID, context.getString(R.string.wadi_title), R.drawable.wadi,
+                context.getString(R.string.wadi_description), context.getString(R.string.wadi_address),
+                context.getString(R.string.wadi_source), context.getString(R.string.wadi_phone),
+                context.getString(R.string.wadi_url));
+
+        Location loc13 = new Location(LANDMARKS_CATEGORY_ID, context.getString(R.string.german_title), R.drawable.german,
+                context.getString(R.string.german_description), context.getString(R.string.german_address),
+                context.getString(R.string.german_source), null, null);
+
+        Location loc14 = new Location(LANDMARKS_CATEGORY_ID, context.getString(R.string.louis_title), R.drawable.louis,
+                context.getString(R.string.louis_description), context.getString(R.string.louis_address),
+                context.getString(R.string.louis_source), null, null);
+
+        Location loc15 = new Location(EVENTS_CATEGORY_ID, context.getString(R.string.film_title), -1,
+                context.getString(R.string.film_description), context.getString(R.string.film_address),
+                context.getString(R.string.film_source), context.getString(R.string.film_phone),
+                context.getString(R.string.film_url), getDateFromString(context, context.getString(R.string.film_date_start)),
+                getDateFromString(context, context.getString(R.string.film_date_end)));
+
+        Location loc16 = new Location(EVENTS_CATEGORY_ID, context.getString(R.string.kids_title), -1,
+                context.getString(R.string.kids_description), context.getString(R.string.film_address),
+                context.getString(R.string.kids_source), context.getString(R.string.kids_phone),
+                context.getString(R.string.kids_url), getDateFromString(context, context.getString(R.string.kids_date_start)),
+                getDateFromString(context, context.getString(R.string.kids_date_end)));
+
         isInitialized = true;
+    }
+
+    private static Date getDateFromString(Context context, String dateString) throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat(context.getString(R.string.date_pattern), Locale.getDefault());
+        return format.parse(dateString);
     }
 }

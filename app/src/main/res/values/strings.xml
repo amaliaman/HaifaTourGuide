@@ -125,9 +125,65 @@
         walking into the artist’s home with his presence.
     </string>
 
-    <string name="location">Location</string>
-    <string name="source">Source:</string>
-    <string name="geo_intent">geo:0,0?q=</string>
+    <string name="german_title">German Colony</string>
+    <string name="german_address">Ben Gurion Street, Haifa</string>
+    <string name="german_source">www.touristisrael.com/haifas-german-colony/4998</string>
+    <string name="german_description">
+        The German Colony of Haifa is a small area located at the foot of the Baha’i Gardens and reaching
+        the Port of Haifa. It was founded in the late 1860s by German Templars (not to be confused with
+        the Templar Knights of the Crusaders who also settled in Northern Israel) and throughout the two
+        world wars in the early 21st century was inhabited on-and-off by the German Protestants who built the area up.
+    </string>
+
+    <string name="louis_title">Louis Promenade</string>
+    <string name="louis_address">Yefe Nof Street, Haifa</string>
+    <string name="louis_source">www.visit-haifa.org/eng/Louis_Promenade</string>
+    <string name="louis_description">
+        Coined \"The balcony of the country\", the promenade was built in 1992, with a length of 400 meters
+        that is located on Yaffe Nof St. and is spread out from Hotel Nof, until the upper entrance to the Baha\'i Gardens.
+        \nThe location of the Promenade is in a hotel area and close to coffee shops of the Central Carmel,
+        turning it into a natural continuation of the tourist avenue of Haifa. Along the entire length of
+        the promenade, a panoramic view can be found, overlooking a spectacular view of the Haifa Bay,
+        the Kryaot suburbs, Acco, Nahariya, Mt. Hermon and Rosh Hanikra. Domestic plants are interwoven
+        along the promenade, among  middle-eastern wooded areas, spacious, open grassy areas next to
+        hidden corners of interest, lamp posts, sitting benches and shade cabanas, children's playgrounds
+        and the Caesar's Monument that lies at the western end of the Promenade.
+    </string>
+
+    <string name="film_title">Haifa International Film Festival</string>
+    <string name="film_address">142 Hanassi Ave., Haifa</string>
+    <string name="film_source">www.haifaff.co.il/eng</string>
+    <string name="film_phone">04–8108471</string>
+    <string name="film_url">www.haifaff.co.il/eng</string>
+    <string name="film_date_start">22/09/2018</string>
+    <string name="film_date_end">01/10/2018</string>
+    <string name="film_description">
+        The Haifa International Film Festival was established in 1983 and became the first of its kind in Israel.
+        This is a major, important and reputable international event in the cinematic field.
+        \nThe festival attracts some 300,000 visitors, who attend 280 screenings of new films from all
+        over the world, 70 of which are Israeli, from all genres, presented by their creators.
+        \nAbout 300 guests from the national and international industry are hosted by the festival.
+        These festival guests meet the audience and colleagues in talks between screenings, receptions
+        in the festival garden, masterclass workshops and international conventions.
+        \nThe festival makes sure to promote ideas like pluralism, co-existence and peace.
+    </string>
+
+    <string name="kids_title">Haifa International Children\'s Theatre Festival</string>
+    <string name="kids_address">27 Pevsner Street., Haifa</string>
+    <string name="kids_source">www.haifakids.com</string>
+    <string name="kids_phone">04–8600500</string>
+    <string name="kids_url">www.haifakids.com</string>
+    <string name="kids_date_start">01/04/2018</string>
+    <string name="kids_date_end">03/04/2018</string>
+    <string name="kids_description">
+        The Haifa International Children’s Theatre Festival has become an annual Passover tradition.
+        The Festival attracts crowds from all over Israel and abroad, and enjoys immense popularity.
+        \nThe rich program includes colorful open-air performances and special activities for children.
+        Stage performances take place in the venues of the Haifa Municipal Theatre, and in the Auditorium
+        complex at the Carmel Center, while the street performances take place on the grounds of the
+        large complex adjacent to the theatre.
+    </string>
+
 
     <string name="vivino_title">Vivino</string>
     <string name="vivino_description">Italian</string>
@@ -135,5 +191,36 @@
     <string name="vivino_source">en.vivino.co.il</string>
     <string name="vivino_phone">04–8229454</string>
     <string name="vivino_url">en.vivino.co.il</string>
+
+    <string name="hanamal_title">Hanamal 24</string>
+    <string name="hanamal_description">French, Italian, Mediterranean</string>
+    <string name="hanamal_address">24 Hanamal Street, Haifa</string>
+    <string name="hanamal_source">hanamal24.rest.co.il/en</string>
+    <string name="hanamal_phone">053–9442262</string>
+    <string name="hanamal_url">hanamal24.rest.co.il/en</string>
+
+    <string name="libira_title">Libira</string>
+    <string name="libira_description">Brewpub</string>
+    <string name="libira_address">26 Hanamal Street, Haifa</string>
+    <string name="libira_source">libira.co.il</string>
+    <string name="libira_phone">04–3740251</string>
+    <string name="libira_url">libira.co.il</string>
+
+    <string name="wadi_title">Ein AlWadi</string>
+    <string name="wadi_description">Lebanese</string>
+    <string name="wadi_address">140 Derech HaAtsmaut, Haifa</string>
+    <string name="wadi_source">www.facebook.com/Ein.alwadi/</string>
+    <string name="wadi_phone">04–8553353</string>
+    <string name="wadi_url">www.facebook.com/Ein.alwadi/</string>
+
+    <string name="location">Location</string>
+    <string name="source">Source:</string>
+    <string name="geo_intent">geo:0,0?q=</string>
+
+    <string name="landmarks_label">Sightseeing</string>
+    <string name="restaurants_label">Restaurants</string>
+    <string name="museums_label">Museums</string>
+    <string name="events_label">Festivals</string>
+    <string name="date_pattern">dd/MM/yyyy</string>
 
 </resources>
